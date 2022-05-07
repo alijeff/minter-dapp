@@ -7,38 +7,51 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "YOUR COLLECTION NAME";
-const description = "Remember to replace this description";
+const namePrefix = "GarGantuans Club";
+const description = "BPPPPPP BOOOOOOOOOOOOO";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
-  {
-    growEditionSizeTo: 5,
-    layersOrder: [
+ {
+  growEditionSizeTo: 1,
+  layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
-    ],
-  },
+      { name: "body" },
+      { name: "eye" },
+      { name: "clothing" },
+      { name: "hat&eye" },
+      { name: "necklace" },
+      { name: "ring" },
+      { name: "watch4" },
+      { name: "smoke" },
+      { name: "accessory" },
+  ],
+ },
+ {
+  growEditionSizeTo: 2,
+  layersOrder: [
+    { name: "Background" },
+    { name: "body" },
+    { name: "eye" },
+    { name: "bundle" },
+  ],
+ },
 ];
+
 
 const shuffleLayerConfigurations = true;
 
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 8505,
+  height: 8505,
   smoothing: false,
 };
 
 const extraMetadata = {
-  external_url: "https://codecats.xyz", // Replace with your website or remove this line if you do not have one.
+  external_url: "https://GGClub.xyz", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
@@ -49,13 +62,13 @@ const LIMIT = 2; // Your API key rate limit
 const CHAIN = 'rinkeby'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'CRYPTOPUNKS';
-const CONTRACT_SYMBOL = 'CP';
+const CONTRACT_NAME = 'GarGantuans Club';
+const CONTRACT_SYMBOL = 'GGC';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
-const OWNER_ADDRESS = 'YOUR WALLET ADDRESS HERE';
-const TREASURY_ADDRESS = 'YOUR WALLET ADDRESS HERE';
-const MAX_SUPPLY = 5000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
-const MINT_PRICE = 1; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
+const OWNER_ADDRESS = '0x45708874D2BFadE2dD8462634940BC42e9288e6c';
+const TREASURY_ADDRESS = '0x45708874D2BFadE2dD8462634940BC42e9288e6c';
+const MAX_SUPPLY = 2; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
+const MINT_PRICE = 0.001; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
@@ -64,19 +77,19 @@ const PUBLIC_MINT_START_DATE = "2022-03-20T11:30:48+00:00"; // This is required.
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PRESALE_MINT_START_DATE = null; // Optional. Eg: 2022-02-08T11:30:48+00:00
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
-const ROYALTY_ADDRESS = "0xd8B808A887326F45B2D0cd999709Aa6264CeF919"; // Address that will receive the royalty
+const ROYALTY_ADDRESS = "0x45708874D2BFadE2dD8462634940BC42e9288e6c"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
 const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually set the whitelisted addresses
 
 // ** OPTIONAL **
-let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually include it
+let CONTRACT_ADDRESS = "0x8218D3a0E29A638fF13e0b3d4C7b84e4dbC5D9F1"; // If you want to manually include it
 
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
-const GENERIC_TITLE = CONTRACT_NAME; // Replace with what you want the generic titles to say if you want it to be different from the contract name.
-const GENERIC_DESCRIPTION = "REPLACE THIS"; // Replace with what you want the generic descriptions to say.
-const GENERIC_IMAGE = "https://ipfs.io/ipfs/QmUf9tDbkqnfHkQaMdFWSGAeXwVXWA61pFED7ypx4hcsfh"; // Replace with your generic image that will display for all NFTs pre-reveal.
+const GENERIC_TITLE = "GGsClub"; // Replace with what you want the generic titles to say if you want it to be different from the contract name.
+const GENERIC_DESCRIPTION = "which GG will you get?"; // Replace with what you want the generic descriptions to say.
+const GENERIC_IMAGE = "https://ipfs.io/ipfs/bafybeigltboy5j7ozloygqfxwhpqu4v3lk3jcmkqrclzde7dco6ou6d274"; // Replace with your generic image that will display for all NFTs pre-reveal.
 
 // Automatically set contract address if deployed using the deployContract.js script
 try {
