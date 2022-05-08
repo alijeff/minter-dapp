@@ -51,7 +51,7 @@ const format = {
 };
 
 const extraMetadata = {
-  external_url: "https://ggclub.netlify.app/", // Replace with your website or remove this line if you do not have one.
+  external_url: "https://alijeff2765.wixsite.com/gargantuansclub", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
